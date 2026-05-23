@@ -1,0 +1,10 @@
+{
+    "clarity_fragment": {
+        "effect": "boost_focus",
+        "value": 2
+    },
+    "resolve_ember": {
+        "effect": "boost_resolve",
+        "value": 2
+    }
+}
