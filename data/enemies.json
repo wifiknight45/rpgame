@@ -1,0 +1,10 @@
+{
+    "doubt": {
+        "intensity": 3,
+        "pressure": 2
+    },
+    "fear": {
+        "intensity": 5,
+        "pressure": 3
+    }
+}
