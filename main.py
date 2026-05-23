@@ -2,18 +2,19 @@
 
 from engine import GameEngine
 from player import Player
+from wizard import WanderingWizard
 from utils import slow_print
-from encounters import initialize_encounters
 
 def main():
-    slow_print("=== WELCOME TO THE TRIAL OF CHOICES ===")
-    name = input("Identify yourself: ")
+    slow_print("=== TRIALS OF THE ABSURD REALM ===")
+    name = input("Name your essence: ").strip() or "Nameless One"
 
     player = Player(name)
-    encounters = initialize_encounters()
-    engine = GameEngine(player, encounters)
+    wizard = WanderingWizard()
+    engine = GameEngine(player, wizard)
 
     engine.start_game()
 
 if __name__ == "__main__":
     main()
+
