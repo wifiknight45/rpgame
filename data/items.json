@@ -1,10 +1,26 @@
 {
-    "clarity_fragment": {
-        "effect": "boost_focus",
-        "value": 2
-    },
-    "resolve_ember": {
-        "effect": "boost_resolve",
-        "value": 2
-    }
+  "curiosity_shard": {
+    "name": "Curiosity Shard",
+    "effect": "boost_focus",
+    "value": 1,
+    "flavor": "A glittering sliver that hums like a question."
+  },
+  "mischief_trinket": {
+    "name": "Mischief Trinket",
+    "effect": "confuse_choice",
+    "value": 1,
+    "flavor": "It giggles when you try to be serious."
+  },
+  "riddle_token": {
+    "name": "Riddle Token",
+    "effect": "unlock_silly_answer",
+    "value": 1,
+    "flavor": "A coin stamped with a question mark that answers nothing useful."
+  },
+  "questionable_map": {
+    "name": "Questionable Map",
+    "effect": "random_hint",
+    "value": 1,
+    "flavor": "Shows directions to feelings you didn't know you had."
+  }
 }
