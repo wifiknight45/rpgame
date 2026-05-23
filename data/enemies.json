@@ -1,10 +1,14 @@
 {
-    "doubt": {
-        "intensity": 3,
-        "pressure": 2
-    },
-    "fear": {
-        "intensity": 5,
-        "pressure": 3
-    }
+  "doubt": {
+    "name": "Doubt",
+    "intensity": 3,
+    "pressure": 2,
+    "flavor": "A whisper that rearranges your priorities."
+  },
+  "confusion": {
+    "name": "Confusion",
+    "intensity": 4,
+    "pressure": 3,
+    "flavor": "A fog that makes choices sound like riddles."
+  }
 }
