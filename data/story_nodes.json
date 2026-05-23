@@ -1,0 +1,74 @@
+{
+    "origin": {
+        "text": "You awaken in a state of pure awareness. Before you lie three impulses.",
+        "choices": {
+            "seek meaning": "meaning",
+            "embrace instinct": "instinct",
+            "question everything": "question"
+        },
+        "event_chance": 0.3
+    },
+
+    "meaning": {
+        "text": "You focus on purpose. A path of intention forms in your mind.",
+        "choices": {
+            "commit": "commitment",
+            "doubt": "doubt"
+        },
+        "event_chance": 0.4
+    },
+
+    "instinct": {
+        "text": "You follow raw impulse. Your senses sharpen.",
+        "choices": {
+            "push forward": "momentum",
+            "hesitate": "hesitation"
+        },
+        "event_chance": 0.5
+    },
+
+    "question": {
+        "text": "You challenge every assumption. Possibilities multiply.",
+        "choices": {
+            "accept uncertainty": "uncertainty",
+            "seek clarity": "clarity"
+        },
+        "event_chance": 0.4
+    },
+
+    "commitment": {
+        "text": "Your resolve solidifies. You feel complete.",
+        "choices": {},
+        "end": true
+    },
+
+    "doubt": {
+        "text": "Your thoughts fracture. You struggle to hold form.",
+        "choices": {},
+        "end": true
+    },
+
+    "momentum": {
+        "text": "Your instincts carry you to a decisive conclusion.",
+        "choices": {},
+        "end": true
+    },
+
+    "hesitation": {
+        "text": "Your momentum fades. You dissolve into indecision.",
+        "choices": {},
+        "end": true
+    },
+
+    "uncertainty": {
+        "text": "You embrace the unknown and become part of it.",
+        "choices": {},
+        "end": true
+    },
+
+    "clarity": {
+        "text": "Your mind sharpens. You transcend the trial.",
+        "choices": {},
+        "end": true
+    }
+}
