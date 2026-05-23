@@ -1,74 +1,252 @@
 {
-    "origin": {
-        "text": "You awaken in a state of pure awareness. Before you lie three impulses.",
-        "choices": {
-            "seek meaning": "meaning",
-            "embrace instinct": "instinct",
-            "question everything": "question"
-        },
-        "event_chance": 0.3
+  "origin": {
+    "text": "You awaken as a question with a name. A trio of impulses present themselves as questions. Which question do you answer first",
+    "choices": {
+      "seek meaning": "meaning",
+      "embrace impulse": "impulse",
+      "ask why not": "why_not"
     },
+    "event_chance": 0.25,
+    "wizard_chance": 0.4
+  },
 
-    "meaning": {
-        "text": "You focus on purpose. A path of intention forms in your mind.",
-        "choices": {
-            "commit": "commitment",
-            "doubt": "doubt"
-        },
-        "event_chance": 0.4
+  "meaning": {
+    "text": "You ask 'What is meaning' and the world replies with a multiple choice exam. Which answer do you pick",
+    "choices": {
+      "a. a polite rumor": "polite_rumor",
+      "b. a glowing punctuation mark": "punctuation",
+      "c. none of the above": "none_above",
+      "4": "none_above"
     },
+    "event_chance": 0.3,
+    "wizard_chance": 0.3
+  },
 
-    "instinct": {
-        "text": "You follow raw impulse. Your senses sharpen.",
-        "choices": {
-            "push forward": "momentum",
-            "hesitate": "hesitation"
-        },
-        "event_chance": 0.5
+  "impulse": {
+    "text": "You follow a sudden 'Do it now' feeling. It suggests three silly actions. Which do you perform",
+    "choices": {
+      "sing to the silence": "sing",
+      "offer a compliment to an idea": "compliment",
+      "make a hat out of your doubts": "hat"
     },
+    "event_chance": 0.35,
+    "wizard_chance": 0.5
+  },
 
-    "question": {
-        "text": "You challenge every assumption. Possibilities multiply.",
-        "choices": {
-            "accept uncertainty": "uncertainty",
-            "seek clarity": "clarity"
-        },
-        "event_chance": 0.4
+  "why_not": {
+    "text": "You ask 'Why not' and receive a cascade of absurd alternatives. Which alternative do you accept",
+    "choices": {
+      "become a question": "become_question",
+      "rename indecision to maybe later": "maybe_later",
+      "ask the nearest concept for directions": "ask_concept"
     },
+    "event_chance": 0.2,
+    "wizard_chance": 0.6
+  },
 
-    "commitment": {
-        "text": "Your resolve solidifies. You feel complete.",
-        "choices": {},
-        "end": true
+  "polite_rumor": {
+    "text": "The polite rumor applauds you and hands you a Curiosity Shard. Do you keep it or toss it into a thought",
+    "choices": {
+      "keep it": "kept_shard",
+      "toss it into a thought": "tossed_shard",
+      "ask the shard for advice": "ask_shard"
     },
+    "event_chance": 0.15,
+    "wizard_chance": 0.5
+  },
 
-    "doubt": {
-        "text": "Your thoughts fracture. You struggle to hold form.",
-        "choices": {},
-        "end": true
+  "punctuation": {
+    "text": "The glowing punctuation mark insists you choose punctuation as a life path. Do you accept",
+    "choices": {
+      "accept punctuation": "accept_punct",
+      "decline politely": "decline_punct",
+      "turn it into a hat": "hat"
     },
+    "event_chance": 0.2,
+    "wizard_chance": 0.4
+  },
 
-    "momentum": {
-        "text": "Your instincts carry you to a decisive conclusion.",
-        "choices": {},
-        "end": true
+  "none_above": {
+    "text": "You select none of the above and the exam folds into a paper crane that asks you a riddle. Answer the riddle or ignore it",
+    "choices": {
+      "answer the riddle": "riddle_answer",
+      "ignore it": "ignore_riddle",
+      "trade it for a trinket": "trade_trinket"
     },
+    "event_chance": 0.35,
+    "wizard_chance": 0.5
+  },
 
-    "hesitation": {
-        "text": "Your momentum fades. You dissolve into indecision.",
-        "choices": {},
-        "end": true
+  "sing": {
+    "text": "Your song attracts a Helpful Nonsense that offers a Riddle Token. Do you accept the token or keep singing",
+    "choices": {
+      "accept token": "accept_token",
+      "keep singing": "keep_singing",
+      "ask the song for directions": "ask_song"
     },
+    "event_chance": 0.4,
+    "wizard_chance": 0.6
+  },
 
-    "uncertainty": {
-        "text": "You embrace the unknown and become part of it.",
-        "choices": {},
-        "end": true
+  "compliment": {
+    "text": "The idea blushes and gives you a Mischief Trinket. Do you wear it or pocket it",
+    "choices": {
+      "wear it": "wear_trinket",
+      "pocket it": "pocket_trinket",
+      "polish it": "polish_trinket"
     },
+    "event_chance": 0.3,
+    "wizard_chance": 0.4
+  },
 
-    "clarity": {
-        "text": "Your mind sharpens. You transcend the trial.",
-        "choices": {},
-        "end": true
-    }
+  "hat": {
+    "text": "Your hat of doubts becomes fashionable. A Tiny Paradox offers a Questionable Map. Do you follow the map or frame it",
+    "choices": {
+      "follow the map": "follow_map",
+      "frame it": "frame_map",
+      "use it as a coaster": "coaster_map"
+    },
+    "event_chance": 0.45,
+    "wizard_chance": 0.7
+  },
+
+  "become_question": {
+    "text": "You become a question and everything answers you with silly one-liners. You feel oddly satisfied.",
+    "choices": {},
+    "end": true,
+    "ending_text": "You dissolve into a chorus of questions and the trial applauds."
+  },
+
+  "maybe_later": {
+    "text": "Indecision renamed to Maybe Later becomes a companion. It offers you a small reward.",
+    "choices": {},
+    "end": true,
+    "ending_text": "You and Maybe Later sip hypothetical tea."
+  },
+
+  "ask_concept": {
+    "text": "The nearest concept points you toward a surprising insight and a small token.",
+    "choices": {},
+    "end": true,
+    "ending_text": "You pocket the insight and feel slightly more interesting."
+  },
+
+  "kept_shard": {
+    "text": "You keep the Curiosity Shard. It hums and increases your focus.",
+    "choices": {},
+    "end": true,
+    "ending_text": "You feel sharper and a little sparkly."
+  },
+
+  "tossed_shard": {
+    "text": "You toss the shard into a thought. The thought grows a tiny flag that reads 'Maybe'.",
+    "choices": {},
+    "end": true,
+    "ending_text": "The flag waves and you learn to wave back."
+  },
+
+  "ask_shard": {
+    "text": "The shard answers with a question about your favorite sandwich. You are confused and amused.",
+    "choices": {},
+    "end": true,
+    "ending_text": "You leave with a new, inexplicable craving."
+  },
+
+  "accept_punct": {
+    "text": "You accept punctuation as a path and become very decisive about commas.",
+    "choices": {},
+    "end": true,
+    "ending_text": "Your sentences gain confidence."
+  },
+
+  "decline_punct": {
+    "text": "You decline politely and punctuation sulks. It sends you a postcard.",
+    "choices": {},
+    "end": true,
+    "ending_text": "You keep the postcard on your imaginary mantle."
+  },
+
+  "riddle_answer": {
+    "text": "You answer the riddle cleverly. The paper crane applauds and gives you a reward.",
+    "choices": {},
+    "end": true,
+    "ending_text": "You feel clever and slightly crinkled."
+  },
+
+  "ignore_riddle": {
+    "text": "You ignore the riddle. It becomes a background hum that occasionally helps you later.",
+    "choices": {},
+    "end": true,
+    "ending_text": "You continue with a quiet advantage."
+  },
+
+  "trade_trinket": {
+    "text": "You trade the riddle for a trinket. The trinket giggles when you try to be serious.",
+    "choices": {},
+    "end": true,
+    "ending_text": "You gain a mischievous accessory."
+  },
+
+  "accept_token": {
+    "text": "You accept the Riddle Token and feel slightly more mysterious.",
+    "choices": {},
+    "end": true,
+    "ending_text": "You tuck the token away and smile enigmatically."
+  },
+
+  "keep_singing": {
+    "text": "You keep singing until the Helpful Nonsense falls asleep. You learn a lullaby.",
+    "choices": {},
+    "end": true,
+    "ending_text": "You hum the lullaby for future use."
+  },
+
+  "ask_song": {
+    "text": "The song suggests you try a different tune. You do and something small changes.",
+    "choices": {},
+    "end": true,
+    "ending_text": "Change tastes like a new chord."
+  },
+
+  "wear_trinket": {
+    "text": "You wear the Mischief Trinket and it rearranges your socks mentally.",
+    "choices": {},
+    "end": true,
+    "ending_text": "Your socks are now conceptually fashionable."
+  },
+
+  "pocket_trinket": {
+    "text": "You pocket the trinket. It hums occasionally and gives you a hint later.",
+    "choices": {},
+    "end": true,
+    "ending_text": "You feel prepared for small absurdities."
+  },
+
+  "polish_trinket": {
+    "text": "You polish the trinket until it reflects a tiny universe. You see a possible future.",
+    "choices": {},
+    "end": true,
+    "ending_text": "You glimpse a future where you own many hats."
+  },
+
+  "follow_map": {
+    "text": "You follow the Questionable Map and it leads to a surprising insight and a small reward.",
+    "choices": {},
+    "end": true,
+    "ending_text": "The insight is sticky but useful."
+  },
+
+  "frame_map": {
+    "text": "You frame the map as art. It becomes a conversation starter with your future self.",
+    "choices": {},
+    "end": true,
+    "ending_text": "You enjoy the compliments from imaginary guests."
+  },
+
+  "coaster_map": {
+    "text": "You use the map as a coaster. Your beverage tastes like possibility.",
+    "choices": {},
+    "end": true,
+    "ending_text": "You sip and feel oddly philosophical."
+  }
 }
